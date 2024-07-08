@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contect us</title>
+    <style>
+        *{
+          margin: 0;
+          padding:0;
+          box-sizing: border-box;
+      
+      }
+      .navbar {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  margin-left: auto; 
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  position: relative;
+  margin-left: 5px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center; 
+  position: relative;
+}
+.nav ul li a:hover{
+  color:orangered
+}
+
+.nav ul li a .fa-solid {
+  width: 20px;
+  height: 20px;
+  color: white;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+  position:relative;
+}
+
+.nav ul li .fa-solid::before {
+  content: "+";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav ul li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color:white;
+  box-shadow: 0 0 10px gainsboro;
+  z-index: 1;
+  padding: 5px 0;
+  width: auto; 
+}
+
+.nav ul li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  
+padding:0px 0;
+  align-items: center;
+
+}
+
+ul .sub-menu li a{
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  font-size: 18px;
+  
+}
+
+.nav button {
+  margin-left: 10px;
+  padding: 15px 40px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: orangered;
+  border: none;
+  border-radius: 25px;
+}
+
+.nav button:hover {
+  background-color: black;
+}
+
+.nav ul li:hover .fa-solid::before {
+  content: "-";
+  display: flex;
+  align-items: center;
+  justify-content: center;     
+  font-weight: bold;
+  font-size: 18px;
+}
+.page{
+  display: flex;
+  text-align: center;
+  column-gap: 70px;
+  width: 500px;
+}
+
+.container{
+          background: rgb(255, 233, 242);
+          height:300px;
+          width:100%;
+          text-align: center;
+      }
+
+.About{
+       padding-top:150px;
+      }
+      .About h1{
+  
+          font-size:45px;
+          font-weight:600;
+      }
+      .home{
+      
+         list-style:none;
+         margin-left:-100px;
+         font-size:20px;
+      }
+
+      .cont{
+
+        display: flex;
+        justify-content: space-between;
+      }
+      .cont1 h1{
+        background:rgb(219, 143, 168);
+        margin-left:20px;
+        width: 320px;
+        border-radius: 25px;
+        text-align: center;
+        margin-top:30px;
+      }
+      .cont1 h2{
+        background:rgb(136, 221, 136);
+        margin-left:50px;
+        width: 220px;
+        border-radius:25px;
+        text-align: center;
+        margin-top:10px;
+      }
+      .cont1 p{
+        margin-left:20px;
+        margin-top:30px;
+      }
+      .cont2 {
+        display: flex;
+        margin-top:50px;
+        margin-left:20px;
+      
+      }
+      .cont3 h1, h2{
+        margin-left:10px;
+      }
+      .cont4 {
+        display: flex;
+        margin-top:50px;
+        margin-left:20px;
+      
+      }
+      .cont5 h1, h2{
+        margin-left:10px;
+      }
+      .cont6 {
+        display: flex;
+        margin-top:50px;
+        margin-left:20px;
+      
+      }
+      .cont7 h1, h2{
+        margin-left:10px;
+      }
+      .cont8 img{
+        margin-top:50px;
+
+      }
+
+
+      .super{
+       background:rgb(204, 248, 204);
+       border-radius:40px;
+       height:700px;
+       width:1000px;
+       text-align: center;
+       margin-left:180px;
+       margin-top:200px;
+      }
+      .super h1{
+        margin-top:150px;
+        background:rgb(9, 180, 248);
+        border-radius:25px;
+        width:300px;
+        
+        margin-left:350px;
+      }
+      .sup{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .sup input{
+        
+    width:450px;
+    height:55px;
+    border-radius:35px;
+    border:2px solid white;
+  
+      }
+      .sup1{
+        margin-top:50px;
+      }
+      .sup2{
+        margin-top:50px;
+      }
+      .sup3{
+        margin-top:30px;
+      }
+      .sup4{
+        margin-top:30px;
+      }
+      .sup5 input{
+        
+        width:850px;
+        height:180px;
+        border-radius:25px;
+        border: none;
+        
+      }
+      .sup5 {
+        margin-top:50px;
+      }
+      .sup5 button{
+        width:850px;
+        height:55px;
+        border:none;
+        border-radius:25px;
+        background: red;
+        margin-top:30px;
+        font-size:25px;
+        color: white;
+      }
+      .sup5 button:hover{
+        background: black;
+      }
+
+      .footer{
+        margin-top: 100px;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    column-gap: 100px;
+    color: white;
+    font-size: 21px;
+    padding-top: 50px;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(93, 93, 243),rgb(27, 26, 26));
+}
+.footer li{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+
+    
+}
+.footer li a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.footer1{
+    width: 400px;
+}
+.footer1 .icons{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 50px;
+    color: blue;
+
+}
+.copyright{
+    height: 90px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    background:linear-gradient(to left,rgb(93, 93, 243),rgb(27, 26, 26));
+}
+.copyright a{
+    color: red;
+}
+     
+ </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="..//kiddd.svg" height="100px" width="200px">
+        </div>
+        <div class="nav">
+            <ul class="links">
+                <li>
+                    <a href="homeV1.html" style="margin-right: 50px;"> <i class="fa-solid fa-plus"></i>Home</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">HomeV1(preschool)</a></li>
+                        <li><a href="#">HomeV2(activities)</a></li>
+                    </ul>
+                </li>
+                <li><a style="margin-right:50px;" href="#">About</a></li>
+                <li><a style="margin-right:50px;" href="#">Service</a></li>
+                <li>
+                    <a href="#">Pages <i class="fa-solid fa-plus"></i></a>
+                    <ul class="sub-menu">
+                        <div class="page">
+                            <div class="page1">
+                        <h3 style="margin:10px;">Pages</h3>
+                        <li><a style="margin: 5px;" href="#">About Us</a></li>
+                        <li><a style="margin: 5px;" href="#">Pricing</a></li>
+                        <li><a style="margin: 5px;" href="#">Teacher</a></li>
+                        <li><a style="margin: 5px;" href="#">Teacher Details</a></li>
+                        <li><a style="margin: 5px;" href="#">Service</a></li>
+                        <li><a style="margin: 5px;" href="#">Blog</a></li>
+                        <li><a style="margin: 5px;" href="#">Blog Details</a></li>
+                        <li><a style="margin: 5px;" href="#">Contact Us</a></li>
+                        <li><a style="margin: 5px;" href="#">FAQ's</a></li>
+                    </div>
+                    <div class="page2">
+                        <h3 style="margin: 10px;"> Utility Pages</h3>
+                        <li><a style="margin: 5px;" href="#">Style Guide</a></li>
+                        <li><a style="margin: 5px;" href="#">Password Protected</a></li>
+                        <li><a style="margin: 5px;" href="#">404 Not found</a></li>
+                        <li><a style="margin: 5px;" href="#">Licence</a></li>
+                        <li><a style="margin: 5px;" href="#">ChangeLog</a></li>
+                       
+                    </div>
+                    </div>
+                    </ul>
+                </li>
+                <li><a style="margin-right:50px;" href="#">Blog</a></li>
+                <li><a style="margin-right:50px;" href="#">Pricing</a></li>
+                <li><a style="margin-right:50px;" href="#">Contact</a></li>
+                <li><a style="margin-right:25px;" href="#">Cart(0)</a></li>
+                <button style="margin-right: 10px; cursor:pointer;">Get Started</button>
+            </ul>
+        </div>
+    </div>
+  <div class="container">
+     <div class="About">     
+        <h1>Contact Us</h1> 
+          <a href="#">Home</a>
+     <a href="#"> contect</a>
+   </div>
+ </div>
+  <div class="cont">
+       <div>
+          <div class="cont1">
+             <h1>Feel Free To Contact</h1>
+               <h2> Us For More Info</h2>
+                  <p> Consectetur adipiscing elit. Tempus nibh sollicitudin cursus risus sit<br>
+               scelerisque dictum odio sed. Aliquet ac</p>
+            </div>
+           <div class="cont2">
+       <img src="../images/kits30.svg">
+     <div class="cont3">
+  <h2>Address</h2>
+ <h1>55 main street New,York</h1>
+     </div>
+          </div>
+             <div class="cont4">
+                <img src="../images/kits31.svg">
+                 <div class="cont5">
+                   <h2>Email Address</h2>
+                     <h1>Chandrasekhar@gmail.com</h1>
+                       </div>
+                         </div>
+                   <div class="cont6">
+               <img src="../images/kits32.svg">
+          <div class="cont7">
+      <h2>Hotline</h2>
+   <h1>+088(17)636253</h1>
+ </div>
+     </div>
+         </div>
+             <div class="cont8">
+             <img src="../images/kits33.svg" >
+           </div>
+         </div>
+
+
+<div class="super">
+         <h1>Leave A Message</h1>
+        <div class="sup">       
+        <div class="sup1">
+          <label style="font-size:30px;">Full Name</label><br>
+          <input type="text" placeholder="Enter your full name">
+        </div>
+          <div class="sup2">
+          <label style="font-size:30px;">Phone NUmber</label><br>
+          <input type="text" placeholder="Enter Your phone number">
+          </div>
+         <div class="sup3">
+            <label style="font-size:30px;">Email</label><br>
+            <input type="text"  placeholder="Enter your Email"><br>
+            </div>
+            <div class="sup4">
+            <label style="font-size:30px;">Subject"</label><br>
+            <input type="text"  placeholder="Enter Your Subject"><br>
+         </div>
+      </div>
+      <div class="sup5">
+          <label style="font-size: 30px;">Message</label><br>
+          <input type="text"  placeholder="Enter Your Message">
+          <button>Send Message</button>
+  </div>
+  </div>
+
+
+  
+  
+  
+  <div class="footer">
+    <div class="footer1">
+        <img src="../images/kits35.svg"><br><br>
+        <p>Consectetur adipiscing elit. Dolor ut leo nunc mollis. Vivamus elementum posuere arcu pellentesque pellentesque.</p>
+    <div class="icons">
+        <li><i class="fa-brands fa-linkedin"></i></li>
+        <li><i class="fa-brands fa-square-facebook"></i></li>
+        <li><i class="fa-brands fa-paypal"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+       
+    </div>
+    <img src="../images/kits34.svg">
+    </div>
+    <div class="footer2">
+        <h3>Menu</h3>
+        <li><a href="#">Home V1(preschhol)</a></li>
+        <li><a href="#">Home V2(activities)</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Teacher</a></li>
+        <li><a href="#">Teacher details</a></li>
+
+    </div>
+    <div class="footer3">
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Blog Details</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+
+    </div>
+    <div class="footer4">
+        <h3>Utility Pages</h3>
+        <li><a href="#">Style Guide</a></li>
+        <li><a href="#">Password Protected</a></li>
+        <li><a href="#">404 Not Found</a></li>
+        <li><a href="#">Licenses</a></li>
+        <li><a href="#">Changelog</a></li>
+
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright @ <a href="#">Kidsland</a>| Designed by<a href="#">WebOcean</a>| Powered by <a href="#">Webflow</a></p>
+</div>
+</body>
+</html>
